@@ -29,6 +29,36 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1187.0, 154.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1187.0, 181.0, 135.0, 27.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "ghostplane.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js ghostplane.js"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
 					"id" : "obj-100",
@@ -239,8 +269,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1351.799927, 37.0, 104.0, 22.0 ],
-					"presentation_rect" : [ 1354.0, 37.0, 0.0, 0.0 ]
+					"patching_rect" : [ 1351.799927, 37.0, 104.0, 22.0 ]
 				}
 
 			}
@@ -269,8 +298,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1214.0, 37.0, 104.0, 22.0 ],
-					"presentation_rect" : [ 1227.0, 33.0, 0.0, 0.0 ]
+					"patching_rect" : [ 1214.0, 37.0, 104.0, 22.0 ]
 				}
 
 			}
@@ -800,8 +828,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 853.5, 49.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 862.0, 0.0, 0.0, 0.0 ]
+					"patching_rect" : [ 853.5, 49.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1490,7 +1517,6 @@
 					}
 ,
 					"patching_rect" : [ 851.0, 79.0, 93.0, 27.0 ],
-					"presentation_rect" : [ 850.0, 52.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -1610,7 +1636,6 @@
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 304.0, 625.0, 244.0, 27.0 ],
-									"presentation_rect" : [ 193.0, 779.0, 0.0, 0.0 ],
 									"triscale" : 0.9
 								}
 
@@ -2167,8 +2192,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 746.0, 305.0, 94.0, 27.0 ],
-					"presentation_rect" : [ 741.0, 304.0, 0.0, 0.0 ]
+					"patching_rect" : [ 746.0, 305.0, 94.0, 27.0 ]
 				}
 
 			}
@@ -3623,6 +3647,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4209,8 +4242,15 @@
 			}
 , 			{
 				"name" : "kleinbottle3.js",
-				"bootpath" : "/Users/jasonsigal/Desktop/ITP_Spring2014/LivePerformance/meds",
-				"patcherrelativepath" : "..",
+				"bootpath" : "/Users/jasonsigal/Desktop/ITP_Spring2014/LivePerformance/meds/strange_now",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ghostplane.js",
+				"bootpath" : "/Users/jasonsigal/Desktop/ITP_Spring2014/LivePerformance/meds/strange_now",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
