@@ -16,13 +16,10 @@ var vmax = Math.PI;
 var a = 1;
 
 function nn(_n) {
-	post("received list " + _n + "\n");
 	n = _n;
-	post("new n is: " + n);
 }
 
 function bang() {
-//	n = 20; //Math.random()*25;
 	makeShape();
 }
 
@@ -53,7 +50,4 @@ function eval(u, v) {
    	var py = Math.sin(u)*(a + Math.sin(v)*Math.cos(u/2) - Math.sin(2*v)*Math.sin(u/2)/2);
 	var pz = Math.sin(u/2)*Math.sin(v) + Math.cos(u/2)*Math.sin(2*v)/2;
 	outlet(0, px, py, pz, u, v, n);
-}
-	
-function reset() {
 }
