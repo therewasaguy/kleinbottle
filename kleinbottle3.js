@@ -31,6 +31,7 @@ function makeShape() {
 	         u = umin + i * (umax - umin) / n;
 	         v = vmin + j * (vmax - vmin) / n;	
 			 eval(u,v);
+			
 	         u = umin + (i+1) * (umax - umin) / n;
 	         v = vmin + j * (vmax - vmin) / n;
 			 eval(u,v);
